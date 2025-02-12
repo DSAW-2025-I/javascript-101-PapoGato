@@ -41,7 +41,8 @@ function findLargest(arr) {
 // Count Vowels in a String
 function countVowels(str) {
   if (typeof str !== 'string') {
-    return "El argumento debe ser una cadena de texto.";
+    console.log("El argumento debe ser una cadena de texto."); // Usando console.log
+    return;
   }
   
   const vocales = 'aeiouAEIOU';
@@ -51,8 +52,9 @@ function countVowels(str) {
       cantidad++;
     }
   }
-  return cantidad;
+  console.log(cantidad); // Imprimir el número de vocales
 }
+
 
 // Check if a Number is Prime
 function isPrime(n) {
